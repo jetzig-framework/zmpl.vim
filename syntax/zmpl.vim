@@ -6,7 +6,7 @@ syn keyword htmlTagName a abbr acronym address applet area article aside audio b
 syn keyword zmplMode @html @zig @markdown \@for @partial @extend @args
 
 syn match htmlAttrName /\w\+=/he=e-1 contained
-syn match htmlAttrValue /"[^"]*"/ contained
+syn match htmlAttrValue /"[^"]*"/ contains=zmplRef
 syn match htmlComment /<!--\zs.\{-}\ze-->/ contained
 syn match htmlDoctype /<!DOCTYPE\s\w+/ contained
 syn match htmlEntity /\&\w+;/ contained
