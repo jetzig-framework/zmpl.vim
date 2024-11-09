@@ -14,11 +14,11 @@ syn match htmlEntity /\&\w+;/ contained
 syn region htmlTag start='<\w\+' end='>' contains=htmlTagName,htmlAttrName,htmlAttrValue,htmlComment,htmlDoctype,htmlEntity
 syn region zmplRef start='{{' end='}}'
 
+highlight default link zmplRef Identifier
+highlight default link zmplMode Keyword
 highlight default link htmlTagName Keyword
 highlight default link htmlAttrName Identifier
 highlight default link htmlAttrValue String
 highlight default link htmlComment Comment
 highlight default link htmlDoctype Type
 highlight default link htmlEntity Constant
-highlight default link zmplRef Identifier
-highlight default link zmplMode Keyword
