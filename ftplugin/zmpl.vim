@@ -3,7 +3,7 @@ if exists("b:ftplugin_loaded")
 endif
 
 let b:ftplugin_loaded = 1
-
+setlocal iskeyword+=@-@
 setlocal expandtab
 setlocal tabstop=8
 setlocal softtabstop=4
