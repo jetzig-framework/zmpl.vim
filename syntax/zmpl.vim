@@ -11,7 +11,7 @@ syn match zmplElse /@else\s*$/
 syn match zmplFor /\s*@for\s\+.*$/ contains=zmplForMode,zmplDollar,zmplDot,zmplIdentifier
 syn match zmplPartial /\s*@partial\s\+.*$/ contains=zmplPartialMode,zmplDollar,zmplDot,zmplPartialName
 
-syn match htmlAttrName /\w\+=/he=e-1 contained
+syn match htmlAttrName /\(\w\|-\)\+=/he=e-1 contained
 syn match htmlAttrValue /"[^"]*"/ contains=zmplRef
 syn match htmlComment /<!--\zs.\{-}\ze-->/ contained
 syn match htmlDoctype /<!DOCTYPE\s\w+/ contained
